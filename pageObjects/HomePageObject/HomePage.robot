@@ -14,3 +14,6 @@ Click Sign In Button On Home Page
 
 Verify User Is Logged In
     Wait Until Element Is Visible         ${userNameTextHomePage}
+
+Click Book Button On Home Page
+    Click Element    ${bookButtonHomePage}

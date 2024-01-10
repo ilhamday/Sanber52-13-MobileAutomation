@@ -1,0 +1,3 @@
+confirmorderPriceBookPage: '//android.widget.Button[@resource-id="com.example.myapplication:id/confirm_order"]'
+confirmorderButtonBookPage: '//android.widget.Button[@resource-id="com.example.myapplication:id/confirm_order"]'
+userbookedPriceBookPage: '//android.widget.CheckedTextView[@resource-id="com.example.myapplication:id/checkedTextView"]'

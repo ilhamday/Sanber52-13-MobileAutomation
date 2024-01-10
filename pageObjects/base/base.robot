@@ -22,7 +22,7 @@ Close Flight Application
     Close Application    
 
 
-# PUNYA FAJRIANSYAH
+PUNYA FAJRIANSYAH
 
 # *** Settings ***
 # Library        AppiumLibrary
