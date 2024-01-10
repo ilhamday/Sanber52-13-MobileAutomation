@@ -2,3 +2,4 @@ Logo_HomePage: '//android.widget.ImageView[@resource-id="com.example.myapplicati
 signIn_button_homePage: '//android.widget.Button[@resource-id="com.example.myapplication:id/login"]'
 userNameTextHomePage: '//android.widget.TextView[@resource-id="com.example.myapplication:id/textView"]'
 bookButtonHomePage: '//android.widget.Button[@resource-id="com.example.myapplication:id/book"]'
+searchButtonHomePage: '//android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]'
