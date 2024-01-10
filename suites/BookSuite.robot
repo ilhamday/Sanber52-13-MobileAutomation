@@ -2,13 +2,15 @@
 Resource    ../pageObjects/HomePageObject/HomePage.robot
 Resource    ../pageObjects/base/base.robot
 Resource    ../pageObjects/LoginPageObject/LoginPage.robot
+Resource    ../pageObjects/BookPageObject/BookPage.robot
+Resource    ../pageObjects/PriceBookPageObject/PriceBookPage.robot
 
 *** Variables ***
 ${VALID_EMAIL}                   support@ngendigital.com
 ${VALID_PASSWORD}                abc123
 
 *** Test Cases ***
-User should be able to book one way from City Chicago to city paris with class economy flight+hotel  with valid credentials
+User should be able to book 
     #Langkah 1 : Buka Aplikasi
     Open Flight Application
     #Langkah 2 : Verifikasi Masuk ke Halaman Utama (Home Page)
@@ -27,7 +29,17 @@ User should be able to book one way from City Chicago to city paris with class e
     Verify User Is Logged In
     #Langkah 9 : Klik Button Book pada Home Page    
     Click Book Button On Home Page
-    #Langkah 10 : Klik Button One Way pada Book Page    
-    Click One Way Button On Book Page
-    #Langkah 9 : Tutup Aplikasi
+    # Step 10 : Verify book page appears
+    Verify Book Page appears
+    #Langkah 11 : Klik Flight Radio Button pada Book Page
+    Click FlightHotel Radio Button On Book Page
+    #Langkah 12 : Klik Book pada Book Page
+    Click Book Button On Book Page
+    # Step 13 : Verify Price Book page appears
+    Verify Price Book Page appears
+    #Langkah 28 : Klik Button City pada Book Page    
+    Click Confirm Button On Price Book Page
+    #Langkah 29 : Verifikasi User booking
+    Verify User Is Booked
+    #Langkah 30 : Tutup Aplikasi
     Close Flight Application

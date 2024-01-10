@@ -6,18 +6,36 @@ Library    AppiumLibrary
 
 
 *** Keywords ***
-Verify Login Appreas
-    Wait Until Element Is Visible    ${emailInputLoginPage}
-    Wait Until Element Is Visible    ${passwordInputLoginPage}
-    Wait Until Element Is Visible    ${signInButtonLoginPage}
+# Verify Login Appreas
+#     Wait Until Element Is Visible    ${emailInputLoginPage}
+#     Wait Until Element Is Visible    ${passwordInputLoginPage}
+#     Wait Until Element Is Visible    ${signInButtonLoginPage}
 
-Input User Email On Login Page
-    [Arguments]       ${email}
-    Input Text        ${emailInputLoginPage}    ${email}
+Verify Book Page appears
+    Wait Until Element Is Visible    ${onewayBarBookPage}
+    Wait Until Element Is Visible    ${fromcitySpinnerFormBookPage}
+    Wait Until Element Is Visible    ${tocitySpinnerFormBookPage}
+    Wait Until Element Is Visible    ${classSpinnerFormBookPage}
+    Wait Until Element Is Visible    ${startdateBookPage}
+    Wait Until Element Is Visible    ${flighthotelRadioButtonBookPage}
+    Wait Until Element Is Visible    ${bookButtonBookPage}
 
-Input User Password On Login Page
-    [Arguments]       ${password}
-    Input Text        ${passwordInputLoginPage}    ${password}
+Click FlightHotel Radio Button On Book Page
+    Click Element    ${flighthotelRadioButtonBookPage}
 
-Click Sign In Button On Login Page
-    Click Element    ${signInButtonLoginPage}
+Click Book Button On Book Page
+    Click Element    ${bookButtonBookPage}
+
+Click Chicago Button On Book Page
+    Click Element    ${chicagoBookPage}
+# Input User Email On Login Page
+#     [Arguments]       ${email}
+#     Input Text        ${emailInputLoginPage}    ${email}
+
+# Input User Password On Login Page
+#     [Arguments]       ${password}
+#     Input Text        ${passwordInputLoginPage}    ${password}
+
+# Click Sign In Button On Login Page
+#     Click Element    ${signInButtonLoginPage}
+
