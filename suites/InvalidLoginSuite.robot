@@ -4,8 +4,8 @@ Resource    ../pageObjects/base/base.robot
 Resource    ../pageObjects/LoginPageObject/LoginPage.robot
 
 *** Variables ***
-${VALID_EMAIL}                   support@ngendigital.com
-${VALID_PASSWORD}                abc123
+#${VALID_EMAIL}                   support@ngendigital.com
+#${VALID_PASSWORD}                abc123
 
 ${INVALID_EMAIL}                  test@gmail.com
 ${INVALID_PASSWORD}               123456
