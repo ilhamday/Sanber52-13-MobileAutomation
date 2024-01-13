@@ -25,7 +25,5 @@ User should be able to login with invalid credentials
     Input User Password On Login Page    ${INVALID_PASSWORD}
     #Langkah 7 : Klik Button Sign in pada Halaman Login
     Click Sign In Button On Login Page
-    #Langkah 8 : Muncul Error Massage
-    
-    #Langkah 9 : Tutup Aplikasi
+    #Langkah 8 : Error Massage Muncul dan Aplikasi Ditutup
     Close Flight Application
